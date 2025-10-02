@@ -10,11 +10,12 @@ namespace Tyuiu.AtanaevRI.Sprint1.Task1.V1.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            double x = 12.0;
-            double y = 2.0;
-            double a = 4.0;
+            double a = 9;
+            double x = 2;
+            double y = 1;
+            
             var res = ds.Calculate(a, x, y);
-            Assert.AreEqual(26, res);
+            Assert.AreEqual(54.67, res);
         }
     }
 }

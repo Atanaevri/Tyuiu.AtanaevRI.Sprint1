@@ -1,4 +1,5 @@
-﻿using Tyuiu.AtanaevRI.Sprint1.Task6.V2.Lib;
+﻿using Newtonsoft.Json.Linq;
+using Tyuiu.AtanaevRI.Sprint1.Task6.V2.Lib;
 namespace Tyuiu.AtanaevRI.Sprint1.Task6.V2.Test
 {
     [TestClass]
@@ -7,6 +8,11 @@ namespace Tyuiu.AtanaevRI.Sprint1.Task6.V2.Test
         [TestMethod]
         public void TestMethod1()
         {
+            DataService ds = new DataService();
+            string strTest = "Hello world";
+            var res = ds.CheckHello(strTest);
+           
+            Assert.AreEqual(true, res);
         }
     }
 }

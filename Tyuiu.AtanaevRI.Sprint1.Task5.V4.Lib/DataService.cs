@@ -1,8 +1,12 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint1;
 namespace Tyuiu.AtanaevRI.Sprint1.Task5.V4.Lib
 {
-    public class DataService
+    public class DataService : ISprint1Task5V4
     {
-
+        public int SecondsToHours(int time)
+        {
+            var res = time / 3600;
+            return res;
+        }
     }
 }
